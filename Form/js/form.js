@@ -38,22 +38,6 @@ function onSubm() {
         alert("Enter your Country Name");
         return false;
     }
-    /*   else if (document.getElementById("pin").value == undefined || isNaN(pinnum)) {
-        alert("Enter a Valid Pincode");
-        return false;
-    } else if (document.getElementById("fe").checked == false && document.getElementById("ma").checked == false) {
-        alert("Choose any Gender");
-        return false;
-    } else if (chec.length < 2) {
-        alert("Choose atleast two food choices");
-        return false;
-    } else if (document.getElementById("st").value == undefined) {
-        alert("Enter your State");
-        return false;
-    } else if (document.getElementById("co").value == undefined) {
-        alert("Enter your Country Name");
-        return false;
-    } */
     var arrf = [];
     arrf.push(document.getElementById("fn").value);
     arrf.push(document.getElementById("ln").value);
@@ -71,7 +55,6 @@ function onSubm() {
         if (chec[i].checked == true)
             foo += chec[i].value + ", ";
     }
-    //console.log(chec);
     foo += chec[chec.length - 1].value;
     arrf.push(foo);
     arrf.push(document.getElementById("st").value);
